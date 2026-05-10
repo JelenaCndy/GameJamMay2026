@@ -17,6 +17,8 @@ public struct DeliveryData
 
 public class DeliveryManager : MonoBehaviour
 {
+    public static DeliveryManager Instance;
+
 
     public int                      m_maxActiveTargets;
     public List<GameObject>         m_possibleTargetslist;
@@ -53,9 +55,22 @@ public class DeliveryManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+
+
+        }
+        else
+        {
+            Destroy(this);
+        }
+
+    }
+    private void Start()
+    {
         init();
     }
-
     private void init()
     {
         RandomlySelectTarget();
@@ -71,8 +86,14 @@ public class DeliveryManager : MonoBehaviour
         return false;
     }
 
-    public void PushToObjectList()
+    public void PushToObjectList(GameObject obj)
     {
+        if (obj)
+        {
+            this.m_possibleTargetslist.Add(obj);
+
+        }
+
 
     }
 

@@ -15,8 +15,7 @@ public class DeliveryTarget : MonoBehaviour
     {
         m_collider = GetComponent<SphereCollider>();
         m_collider.isTrigger = true;
-
-
+        DeliveryManager.Instance.PushToObjectList(gameObject);
 
     }
 
