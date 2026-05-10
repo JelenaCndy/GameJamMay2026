@@ -71,6 +71,11 @@ public class DeliveryManager : MonoBehaviour
         return false;
     }
 
+    public void PushToObjectList()
+    {
+
+    }
+
     private void RandomlySelectTarget()
     {
 
