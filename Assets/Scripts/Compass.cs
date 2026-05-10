@@ -13,7 +13,7 @@ public class Compass : MonoBehaviour
 
 
     [HideInInspector] public Vector3    m_targetPos => m_target.transform.position;
-    public GameObject                          m_target;
+    public GameObject                   m_target;
     float                               m_radius = 80f;
 
     public Vector3 direction => CalculateDirection();

@@ -24,18 +24,18 @@ public class DeliveryManager : MonoBehaviour
 
     public List<DeliveryData>       m_activeTargetList = new();
     public              GameObject  m_currentDeliveryTarget = null;
-    [SerializeField]    GameObject  m_player;
+    public    GameObject            m_player;
 
 
     private void FixedUpdate()
     {
         GameObject closestObject = GetClosestTarget(m_player.transform.position);
-
-        if (closestObject)
+        if (!closestObject)
         {
-            m_currentDeliveryTarget = GetClosestTarget(m_player.transform.position);
-
+            return;
         }
+        m_currentDeliveryTarget = GetClosestTarget(m_player.transform.position);
+
     }
 
 
@@ -86,7 +86,6 @@ public class DeliveryManager : MonoBehaviour
             data.m_target   = m_possibleTargetslist[randomIndex];
             data.m_isTarget = true;
 
-            Debug.Log("tried to add data...");
             m_activeTargetList.Add(data);
             continue;
 
@@ -96,12 +95,14 @@ public class DeliveryManager : MonoBehaviour
         
 
     }
+    
 
     //Find the closest target to origin, ie player.position, and return it.
     public GameObject GetClosestTarget(Vector3 origin)
     {
         if (m_activeTargetList.Count <= 0)
             return null;
+
         GameObject toReturn = null;
         Vector3 shortestDistance = Vector3.zero;
 
@@ -115,6 +116,7 @@ public class DeliveryManager : MonoBehaviour
             else if(m_currentDeliveryTarget)
             {
                 shortestDistance = m_currentDeliveryTarget.transform.position - origin;
+                toReturn = m_currentDeliveryTarget;
             }
 
             if (!current.m_isTarget)
@@ -127,9 +129,9 @@ public class DeliveryManager : MonoBehaviour
             if (IsDistanceCloser(currentDistance, shortestDistance))
             {
                 shortestDistance = currentDistance;
-                toReturn = current.m_target;
 
             }
+            toReturn = current.m_target;
             
 
 
