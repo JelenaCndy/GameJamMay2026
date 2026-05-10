@@ -3,18 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(SphereCollider))]
+[RequireComponent(typeof(BoxCollider))]
 public class TargetCollider : MonoBehaviour
 {
 
-    bool isActive = false;
-    SphereCollider m_collider;
+    bool        isActive = false;
+    BoxCollider m_collider;
 
 
     private void Awake()
     {
-        m_collider = GetComponent<SphereCollider>();
+        m_collider = GetComponent<BoxCollider>();
+        m_collider.isTrigger = true;
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Hit SOMETHING TRIG ENTER!!!");
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("HIT SOMETHING COL ENTER");
     }
 
 

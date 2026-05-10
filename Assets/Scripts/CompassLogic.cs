@@ -34,7 +34,7 @@ public class CompassLogic : MonoBehaviour
             return;
         }
         Vector3 worldDir = m_delivery.m_currentDeliveryTarget.transform.position - m_delivery.m_player.transform.position;
-
+        
         Vector3 localDir = m_delivery.m_player.transform.InverseTransformDirection(worldDir);
 
         float angleRadians = Mathf.Atan2(localDir.x, localDir.z);
