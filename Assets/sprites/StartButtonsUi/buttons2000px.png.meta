@@ -103,18 +103,194 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: buttons2000px_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1450
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d09280518f74946aa69438fa011628
+      internalID: -894684821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons2000px_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1175
+        width: 1563
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4f0eec01cabbc419dc4e98d16d10db
+      internalID: -1572528956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons2000px_2
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1143
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e56fa16db58414fb6586c48a71a3f7
+      internalID: 43901250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons2000px_3
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1143
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be0eeb5981fa0e44b68d0fdd2b3ea87
+      internalID: 1992238392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons2000px_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 197
+        width: 1645
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c947be674d9cc4d4d8a83a9b2053e38d
+      internalID: 1858543315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons2000px_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 856
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4747d9348f4dc44c806b4ba7cda64c9
+      internalID: 1389794336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons2000px_6
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 506
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25d580aabdba674cbea5001bfd38ba3
+      internalID: 485981883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttons2000px_7
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 0
+        width: 163
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eb8d837f1dce44e8a47ef6b273df48
+      internalID: 532643452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7f7422ae3fddfc94faf75ec08c4b3c42
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      buttons2000px_7: 532643452
+      buttons2000px_6: 485981883
+      buttons2000px_1: -1572528956
+      buttons2000px_3: 1992238392
+      buttons2000px_5: 1389794336
+      buttons2000px_0: -894684821
+      buttons2000px_2: 43901250
+      buttons2000px_4: 1858543315
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
