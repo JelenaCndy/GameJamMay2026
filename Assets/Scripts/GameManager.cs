@@ -17,7 +17,7 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
 
-    public static void  GameManager Instance;
+    //public static void  GameManager Instance;
     public GameState m_currentState { get; set; }
 
 
@@ -25,14 +25,14 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance is null)
+        /*if (Instance is null)
         {
             Instance = this;
         }
         else
         {
             Destroy(this);
-        }
+        }*/
     }
 
 
