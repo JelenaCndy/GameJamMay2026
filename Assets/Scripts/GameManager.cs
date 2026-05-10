@@ -20,12 +20,12 @@ public class GameManager : MonoBehaviour
     public float m_matchDuration = 180f;
 
 
-    public int   m_deliveryCount;
+    public int m_deliveryCount = 0;
 
 
-    public float    m_currentDuration;
-    public int      m_totalDeliveryCount;
-    public int    m_currentDeliveryCount;
+    public float m_currentDuration;
+    public int      m_totalDeliveryCount = 0;
+    public int      m_currentDeliveryCount = 0;
 
 
 
@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     public GameObject m_defeatScreen;
     public GameObject m_victoryScreen;
 
+
+    
 
     public void CountDown(float DeltaTime)
     {
@@ -96,6 +98,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this);
         }
+
+        StartGame();
     }
 
 

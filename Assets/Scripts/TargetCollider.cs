@@ -17,6 +17,8 @@ public class TargetCollider : MonoBehaviour
         m_collider.isTrigger = true;
     }
 
+    
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Hit SOMETHING TRIG ENTER!!!");
