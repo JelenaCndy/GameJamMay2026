@@ -67,6 +67,15 @@ public class DeliveryManager : MonoBehaviour
         }
 
     }
+
+
+    private IEnumerator WaitABit()
+    {
+
+        yield return new WaitForSeconds(2f);
+        init();
+
+    }
     private void Start()
     {
         init();
